@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>🧪 LA MOLE - Révisions Chimie</title>
+
+style.css
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;display=swap
+</head>
+
+<body>
+
+<header class="hero">
+
+<div class="hero-content">
+
+<h1>🧪 LA MOLE</h1>
+
+<h2>Quantité de matière • Première Spécialité</h2>
+
+<p>
+Réviser rapidement • S'entraîner • Réussir le BAC
+</p>
+
+<div class="hero-buttons">
+<button onclick="showSection('cours')">
+📚 Réviser
+</button>
+
+<button onclick="showSection('quiz')">
+🎯 Quiz
+</button>
+
+<button onclick="showSection('formulaire')">
+📋 Formulaire
+</button>
+</div>
+
+</div>
+
+</header>
+
+<nav>
+
+<button onclick="showSection('cours')">
+📚 Cours
+</button>
+
+<button onclick="showSection('flashcards')">
+🧠 Flashcards
+</button>
+
+<button onclick="showSection('quiz')">
+🎯 Quiz
+</button>
+
+<button onclick="showSection('formulaire')">
+📋 Formulaire
+</button>
+
+</nav>
+
+<main>
+
+<section id="cours" class="page">
+
+<h2>📚 Les notions essentielles</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>⚛️ Quantité de matière</h3>
+<p>n = m / M</p>
+</div>
+
+<div class="card">
+<h3>🔢 Nombre d'entités</h3>
+<p>N = n × NA</p>
+</div>
+
+<div class="card">
+<h3>🧪 Concentration</h3>
+<p>C = n / V</p>
+</div>
+
+<div class="card">
+<h3>💧 Dilution</h3>
+<p>C₁V₁ = C₂V₂</p>
+</div>
+
+<div class="card">
+<h3>⚖️ Masse volumique</h3>
+<p>ρ = m / V</p>
+</div>
+
+<div class="card">
+<h3>🌬️ Volume molaire</h3>
+<p>n = V / Vm</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="flashcards" class="page hidden">
+
+<h2>🧠 Flashcards</h2>
+
+<div class="flashcard" onclick="flip(this)">
+<div class="front">
+Comment calculer une quantité de matière ?
+</div>
+
+<div class="back">
+n = m / M
+</div>
+</div>
+
+<div class="flashcard" onclick="flip(this)">
+<div class="front">
+Formule de concentration ?
+</div>
+
+<div class="back">
+C = n / V
+</div>
+</div>
+
+<div class="flashcard" onclick="flip(this)">
+<div class="front">
+Formule de dilution ?
+</div>
+
+<div class="back">
+C₁V₁ = C₂V₂
+</div>
+</div>
+
+</section>
+
+<section id="quiz" class="page hidden">
+
+<h2>🎯 Quiz</h2>
+
+<div id="quiz-container">
+
+<div id="question">
+Question ici
+</div>
+
+<div id="answers">
+</div>
+
+<div id="result">
+</div>
+
+<button id="next-btn" onclick="nextQuestion()">
+Question suivante
+</button>
+
+</div>
+
+</section>
+
+<section id="formulaire" class="page hidden">
+
+<h2>📋 Formulaire BAC</h2>
+
+<pre>
+n = m/M
+
+m = nM
+
+N = nNA
+
+C = n/V
+
+n = CV
+
+ρ = m/V
+
+m = ρV
+
+n = ρV/M
+
+C1V1 = C2V2
+
+n = V/Vm
+
+V = nVm
+</pre>
+
+</section>
+
+</main>
+
+<script src="script.js"></</html>
